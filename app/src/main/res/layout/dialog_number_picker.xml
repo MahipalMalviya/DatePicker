@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp">
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="3"
+            android:orientation="horizontal">
+
+        <android.support.v7.widget.AppCompatTextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Day"
+                android:layout_weight="1"
+                android:textStyle="bold"
+                android:layout_marginEnd="10dp"
+                android:gravity="center"
+                android:textColor="@color/colorAccent"/>
+
+        <android.support.v7.widget.AppCompatTextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Month"
+                android:layout_weight="1"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:textColor="@color/colorAccent"/>
+
+        <android.support.v7.widget.AppCompatTextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Year"
+                android:layout_weight="1"
+                android:layout_marginStart="10dp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:textColor="@color/colorAccent"/>
+    </LinearLayout>
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="3"
+            android:orientation="horizontal">
+
+        <NumberPicker
+                android:id="@+id/np_day"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginEnd="10dp"/>
+
+        <NumberPicker
+                android:id="@+id/np_month"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"/>
+
+        <NumberPicker
+                android:id="@+id/np_year"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginStart="10dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+        <android.support.v7.widget.AppCompatButton
+                android:id="@+id/btn_dialog_cancel"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Cancel"
+                android:textAllCaps="false"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:layout_marginEnd="5dp"
+                android:textColor="@color/colorAccent"
+                android:textStyle="bold"
+                android:textSize="16sp"/>
+
+        <android.support.v7.widget.AppCompatButton
+                android:id="@+id/btn_get_date"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Set"
+                android:layout_marginStart="5dp"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:textAllCaps="false"
+                android:textColor="@color/colorAccent"
+                android:textStyle="bold"
+                android:textSize="16sp"/>
+    </LinearLayout>
+</LinearLayout>
